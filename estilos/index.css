@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:#252623;
+    --hard-color:#191816;
+    --light-grey:#BFB6A8;
+    --hard_yellow:#DECC00;
+    --orange-color: #eca117;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;       
+}
+/* ---------------------------------------------------------------------------- Header -----------------------------------------------------*/
+header{
+    background: var(--main-color);
+    height: 100vh;
+    margin-bottom: 5rem;
+}
+    .header_main_container{    
+        height: 6rem;  
+        border-bottom: 1.5px solid rgba(255,255,255, 0.1);   
+    }
+        nav{    
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            padding:0 5%;            
+        }
+            .nav__logo{
+                font-size: 2.5rem;
+                font-weight: 900;
+                color: white;
+                transition: font-size 2s;                
+            }
+            .nav__logo:hover{
+                cursor: pointer;
+                font-size: 3.5rem;
+            }
+            .nav__logo:hover > .w{
+                color:var(--orange-color);
+                font-size: 4rem;
+            }
+                .w{
+                    font-size: 3rem;
+                    color: var(--hard_yellow);                                        
+                }
+            .nav__label,.nav_input{
+                display: none;                                            
+            }
+                .img__menu{                                    
+                    color: white;            
+                    width: 4rem;
+                    height: 4rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 5rem;
+                }
+            .nav__menu{
+                display: flex;                   
+            }
+                .nav__item{
+                    padding-left: 1.5rem;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 2rem;
+                    --clipy:polygon(0 0, 0 0, 0 100%, 0% 100%);            
+                }
+                .nav__item::after{
+                    content: "";
+                    display: block;
+                    background: var(--orange-color);
+                    width: 100%;
+                    margin-top: 3px;
+                    height: 3px;
+                    clip-path: var(--clipy);
+                    transition: clip-path .5s;
+                }
+                .nav__item:hover{
+                    --clipy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }
+                .nav_input:checked + .nav__menu{
+                    background-color: var(--hard-color);
+                }
+    .header_second_container{    
+        width: 100%;        
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding:0 5%;        
+        height: calc(100% - 6rem);  
+        gap:2rem;             
+    } 
+        .main_description{ 
+            width: 50%;                             
+        }
+            .main_description h2{
+                color: var(--hard_yellow);
+                font-size: 7rem;
+                font-weight: 700;
+            }
+            .main_description p{
+                color: var(--light-grey);
+                font-size: 2rem;
+                font-weight: 400;
+                margin-bottom: 3rem;
+            }
+            .main_description button{
+                background-color: var(--hard_yellow);
+                border: none;
+                border-radius: 7px;
+                font-size: 4rem;
+                color: #252623;
+                padding: 1rem
+            }
+            .main_description button:hover{
+                background-color: var(--orange-color);  
+                cursor: pointer;                        
+            }
+
+        .main_img{            
+            width: 50%;                                             
+        }
+
+/* ---------------------------------------------------------------------------- Header -----------------------------------------------------*/
+
+
+
+/* ---------------------------------------------------------------------------- Maain -----------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------- Beneficios -----------------------------------------------------*/
+.beneficios_sec{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    margin-bottom: 6rem;    
+    padding:0 5%; 
+}
+    .ben_title{
+        color: var(--main-color);
+        font-size: 5rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .ben_title::after{
+        content: "";
+        display: block;
+        background-color: var(--orange-color);
+        width: 100%;
+        margin-top: 0.2rem;
+        height: 3px;    
+    }
+    .ben_paragraph{
+        color: var(--main-color);
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 3rem;        
+    }
+    .beneficios{
+        /* background-color: red; */
+        width: 100%;       
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 3.5em;
+        flex-wrap: wrap; /* cuando los elementos no entren en una sola linea pasa a la siguiente linea */;     
+    }    
+        .beneficio{ 
+            /* height: 43rem; */
+            background:var(--main-color);
+            color: white;
+            flex-basis: 28rem; /* define tamaño de la base de los flex items */
+            max-width: 40rem;
+            flex-grow: 1;/* si algun elemento se sale de su linea toma el 100% */ 
+            padding: 1rem 1rem 3rem 1rem;
+            border-radius: 6rem 0 6rem 0;     
+        } 
+            .beneficio img{
+                width: 100%;   
+                height: 20rem;
+                border-radius: 6rem 0 0 0;                            
+            }
+            .beneficio h4{
+                font-size: 3rem;
+                color: var(--hard_yellow);
+                margin-bottom: 1rem;  
+                text-align: center;                                         
+            }
+            .beneficio p{
+                font-size: 1.8rem;
+                font-weight: 300; 
+                text-align: center;                           
+            }
+/* ---------------------------------------------------------------------------- Beneficios -----------------------------------------------------*/
+
+
+
+/* ---------------------------------------------------------------------------- Projects -----------------------------------------------------*/
+.proyects_sec{
+    margin-bottom: 6rem;    
+    padding:0 5%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;           
+}
+    .proyects_sec h3{
+        color: var(--main-color);
+        font-size: 5rem;
+        font-weight: 800;
+        margin-bottom: 5rem;
+        text-align: center;              
+    }
+    .proyects_sec h3::after{
+        content: "";
+        display: block;
+        background-color: var(--orange-color);
+        width: inherit;
+        margin-top: 0.2rem;
+        height: 3px;    
+    }
+    .projects{
+        width: 100%;       
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 3.5em;
+        flex-wrap: wrap;
+                 
+    }
+        .project{
+            background:var(--main-color);
+            color: white;
+            flex-basis: 40rem; /* define tamaño de la base de los flex items */
+            max-width: 55rem;
+            flex-grow: 1;/* si algun elemento se sale de su linea toma el 100% */              
+            height: 30rem;              
+        }
+        .project:hover{
+            cursor: pointer;
+            filter: opacity(0.9); 
+            transform: scale(1.04);
+        }
+        .project img{
+            width: 100%;
+            height: 100%;
+        }
+/* ---------------------------------------------------------------------------- Projects -----------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------- Nosotros -----------------------------------------------------*/
+.nosotros_sec{
+    margin-bottom: 6rem;    
+    padding:0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .nosotros_sec h3{
+        color: var(--main-color);
+        font-size: 5rem;
+        font-weight: 800;
+        margin-bottom: 3rem;
+        text-align: center; 
+    }
+    .nosotros_sec h3::after{
+        content: "";
+        display: block;
+        background-color: var(--orange-color);
+        width: inherit;
+        margin-top: 0.2rem;
+        height: 3px;    
+    }    
+    .nosotros_sec p{
+        font-size: 2rem;
+        font-weight: 300;
+        text-align: center;
+    }
+/* ---------------------------------------------------------------------------- Nosotros -----------------------------------------------------*/
+
+/* ---------------------------------------------------------------------------- Footer -----------------------------------------------------*/
+footer{
+    background: var(--main-color);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ---------------------------------------------------------------------------- Footer -----------------------------------------------------*/
+#top{
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    background-color: var(--orange-color);
+    width: 5rem;
+    height: 5rem;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    border: none;
+}
+#top:hover{
+    cursor: pointer;
+    background-color: var(--hard_yellow);
+}
+
+
+/* ---------------------------------------------------------------------------- Main -----------------------------------------------------*/
+        
+
+@media (max-width: 900px){
+    html{
+        font-size: 8px;
+    }   
+}
+@media (max-width: 700px){
+    html{
+        font-size: 7px;
+    }
+    header{
+        /* height: auto;  */
+        padding: 2rem 0;       
+    }
+    .nav__label{
+        display: block;        
+    }
+    .nav__menu{
+        position:absolute;
+        top:8rem; 
+        bottom: 0;/* hace que me tome el alto de toda la pantalla */ 
+        background-color:var(--hard-color);/* si no se le da de nuevo el color no se vera bien el efecto */
+        width: 100%;
+        left: 0;        
+        justify-content:space-around;
+        flex-direction: column;        
+        align-items:center;
+        clip-path: circle(0 at center);
+        transition: clip-path 1s ease-in-out;        
+    }
+        .nav__item{
+            font-size: 5rem;            
+        }
+    .nav_input:checked + .nav__menu{        
+        clip-path: circle(100% at center);        
+    }
+    
+    .header_second_container{  
+        justify-content: center;      
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        gap:6rem;        
+    }
+        .main_description{           
+            width: 100%;
+            margin-bottom: 6rem;  
+            display: flex; 
+            flex-direction: column;             
+            align-items: center;            
+        }
+            .main_description h2{
+                text-align: center;                
+            }
+            .main_description p{
+                text-align: center;                
+            }           
+        .main_img{            
+            width: 60%;
+        }
+        #top{
+            right: 0;
+        }
+}
+@media (max-width: 300px){
+    html{
+        font-size: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

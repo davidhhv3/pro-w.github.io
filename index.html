@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro-w</title>
+    <link rel="stylesheet" href="./estilos/index.css">
+    <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>    
+</head>
+<body>
+
+    <header>
+        <div class="header_main_container" >
+            <nav>
+                <h1 class="nav__logo">Pro-<span class="w">W</span></h1>
+    
+                <label for="menu" class="nav__label" onclick="disableScroll()">    
+                    <div class="img__menu">
+                        <i class='bx bx-menu'></i>
+                    </div>        
+                </label>
+    
+                <input type="checkbox"  id="menu" class="nav_input">
+    
+                <div class="nav__menu">
+                    <a href="#" onclick="document.getElementsByClassName('nav_input')[0].checked = false;document.body.style.overflowY='scroll'" class="nav__item">Inicio</a>                    
+                    <a href="#ben_id"  class="nav__item">Beneficios</a>
+                    <a href="#pro_id"  class="nav__item">Proyectos</a>
+                    <a href="#nos_id"  class="nav__item">Nosotros</a>
+                </div>    
+            </nav>
+        </div>
+
+        <div class="header_second_container">
+            <div class="main_description">
+                <h2>Diseño web Profesional</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ducimus neque itaque iste quos quod praesentium incidunt beatae, aspernatur veniam porro adipisci dolore? Praesentium, pariatur?</p>
+                <button>Contactenos</button>
+            </div>
+            <img class="main_img" src="./assets/main_img.png" alt="">
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="beneficios_sec" id="ben_id">
+            <h3 class="ben_title">Beneficios al preferirnos</h3>
+            <p class="ben_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas in numquam eius laboriosam sint consequatur cupiditate aspernatur dolorem ab dolore omnis quibusdam illo aperiam, ratione nostrum unde nulla? Odit, perspiciatis?</p>
+            <div class="beneficios">
+
+                <div class="beneficio">
+                    <img src="./assets/arquitecturaWeb.png" alt="">
+                    <h4>Arquitectura web</h4> 
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quae. Perferendis voluptas quidem minima voluptatibus? Tempora at cum quidem fugiat illo eveniet rem commodi adipisci, enim corrupti ipsum rerum corporis.</p>          
+                </div>
+        
+                <div class="beneficio">
+                    <img src="./assets/adaptable.png" alt="">
+                    <h4>Diseño adaptable</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quae. Perferendis voluptas quidem minima voluptatibus? Tempora at cum quidem fugiat illo eveniet rem commodi adipisci, enim corrupti ipsum rerum corporis.</p>          
+                </div>
+        
+                <div class="beneficio"> 
+                    <img src="./assets/seguridad.png" alt="">  
+                    <h4>Seguridad</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quae. Perferendis voluptas quidem minima voluptatibus? Tempora at cum quidem fugiat illo eveniet rem commodi adipisci, enim corrupti ipsum rerum corporis.</p>          
+                </div>        
+            </div>
+        </section>
+
+        <section class="proyects_sec" id="pro_id">
+            <h3 class="proj_title">Nuestros Proyectos</h3>
+            <div class="projects">
+                <div class="project">
+                    <img src="./assets/webs/1.png" alt="">                    
+                </div>
+                <div class="project"> 
+                    <img src="./assets/webs/2.png" alt="">                    
+                </div>
+                <div class="project"> 
+                    <img src="./assets/webs/3.png" alt="">                    
+                </div>
+                <div class="project">  
+                    <img src="./assets/webs/4.png" alt="">                   
+                </div>  
+                <div class="project"> 
+                    <img src="./assets/webs/5.jpg" alt="">                    
+                </div> 
+                <div class="project">  
+                    <img src="./assets/webs/6.jpeg" alt="">                   
+                </div>               
+            </div>
+        </section>
+
+        <section class="nosotros_sec" id="nos_id">
+            <h3 class="proj_title">Sobre Nosotros</h3>   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti maxime voluptatibus sequi perspiciatis exercitationem sed officia odit amet temporibus facere eveniet et quis quod tenetur possimus laborum laudantium quam neque, iure a quia eligendi totam? Esse illum autem molestiae unde vero expedita quasi consequatur rem suscipit, repellendus, delectus a fugiat. Possimus excepturi maiores minus, deleniti cupiditate fuga cumque sapiente natus reiciendis! Odio, alias repellendus! Nisi omnis officiis facere corporis autem necessitatibus labore praesentium? Quis, rerum nesciunt non dolores officiis ab, doloremque in veniam delectus debitis vero quibusdam. Aperiam optio quis id rem aspernatur numquam consectetur, nihil dolorum, eum modi, omnis nemo quae pariatur ducimus placeat? Fugit eaque animi voluptate, error itaque voluptatem ullam quas magni alias officiis nobis quam. Quibusdam, nobis quidem. Perferendis nobis commodi quibusdam fuga. Expedita recusandae neque quod aliquid voluptatem eaque asperiores eos velit vitae quas pariatur cumque in esse unde, reprehenderit laudantium consectetur excepturi molestias odio laboriosam rerum facere sint nihil totam! Atque similique consectetur modi natus laboriosam, error voluptas dolores omnis impedit eaque repudiandae fugiat incidunt fugit repellat libero, optio ipsam repellendus eveniet nisi iste harum nobis temporibus tempore! Labore molestias porro aut nihil debitis commodi, voluptatibus perspiciatis minus sint deserunt, fugit voluptates magni?</p>         
+        </section>
+
+    </main>
+
+    <footer>
+        <h1 class="nav__logo">Pro-<span class="w">W</span></h1>        
+    </footer>
+
+    <button id="top" onclick="document.documentElement.scrollTop='0'"><i class='bx bx-chevron-up'></i></button>    
+    
+
+    <script>
+        var btn_top = document.getElementById("top"); 
+        var nav_input= document.getElementsByClassName('nav_input');       
+        window.addEventListener("scroll",function(){
+            if(document.documentElement.scrollTop > 100){
+                document.body.style.overflowY="scroll";
+                nav_input[0].checked = false;  
+            }
+            if(document.documentElement.scrollTop > 700){
+                btn_top.style.display="flex";
+            }else{
+                btn_top.style.display="none";                
+            }
+        })
+
+        function disableScroll(){            
+           var nav_input= document.getElementsByClassName('nav_input');
+           if(nav_input[0].checked == false){
+              document.body.style.overflow="hidden";
+           }else{
+              document.body.style.overflow="scroll";               
+           }          
+        }
+    </script>
+    
+</body>
+
+</html>
